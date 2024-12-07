@@ -13,10 +13,10 @@ container_name=$(prompt_user "Enter the container name" "mysql")
 network_name=$(prompt_user "Enter the network name" "general")
 mysql_port=$(prompt_user "Enter the MySQL port" "3306")
 mysql_database=$(prompt_user "Enter the MySQL database name" "general")
-mysql_user=$(prompt_user "Enter the MySQL user" "root")
+mysql_user=$(prompt_user "Enter the MySQL user" "default")
 mysql_password=$(prompt_user "Enter the MySQL password" "secretpass")
 mysql_root_password=$(prompt_user "Enter the MySQL root password" "secretpass")
-allow_host=$(prompt_user "Enter the allowed host" "127.0.0.1")
+allow_host=$(prompt_user "Enter the allowed host" "0.0.0.0")
 
 # Generate the .env file
 echo "Creating .env file for MySQL setup..."
