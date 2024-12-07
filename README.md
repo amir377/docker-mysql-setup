@@ -38,7 +38,7 @@ This repository provides an easy-to-use solution for deploying a MySQL database 
 Open PowerShell as Administrator and run:
 
 ```powershell
-git clone https://github.com/amir377/docker-mysql-setup; cd docker-mysql-setup; ./install.ps1
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; git clone https://github.com/amir377/docker-mysql-setup; cd docker-mysql-setup; ./install.ps1
 ```
 
 #### Linux/Mac
