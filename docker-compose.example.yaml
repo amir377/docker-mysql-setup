@@ -1,0 +1,23 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: ${CONTAINER_NAME}
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - "${ALLOW_HOST}:${MYSQL_PORT}:3306"
+    networks:
+      - ${NETWORK_NAME}
+
+volumes:
+  mysql-data:
+    driver: local
+
+networks:
+  ${NETWORK_NAME}:
+    external: true
