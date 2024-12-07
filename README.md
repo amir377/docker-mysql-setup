@@ -41,7 +41,7 @@ curl -fsSL https://github.com/amir377/docker-mysql-setup/main/install.sh | bash
 
 1. Clone the repository:
    ```powershell
-   git clone https://github.com/your-username/docker-mysql-setup.git
+   git clone https://github.com/amir377/docker-mysql-setup.git
    cd docker-mysql-setup
    ```
 
